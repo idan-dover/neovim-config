@@ -7,17 +7,13 @@ local keymap = vim.keymap -- for conciseness
 -- General keymaps
 
 -- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>", {desc = "Exit insert mode with jk" })
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlight
-keymap.set("n", "<leader>/", ":noh<CR>", {desc = "clear search highlight" })
+keymap.set("n", "<leader>/", ":noh<CR>", { desc = "clear search highlight" })
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
-
--- increment/decrement numbers
-keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
-keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
@@ -30,5 +26,14 @@ keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- o
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
-keymap.set("n", "gr", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- document management
+keymap.set("n", "<leader>ds", "<cmd>w<CR>", { desc = "save current document" }) -- save the current buffer
+keymap.set("n", "<leader>dq", "<cmd>wq<CR>", { desc = "save and quit current document" }) -- save and quit the current buffer
+keymap.set("n", "<leader>da", "<cmd>wa<CR>", { desc = "save all documents" }) -- save and quit the current buffer
+keymap.set("n", "<leader>dx", "<cmd>wqa<CR>", { desc = "save all documents and quit" }) -- save and quit the current buffer
+
+-- gui opener
+keymap.set("n", "<leader>ol", "<Cmd>Lazy<CR>", { desc = "opens Lazy GUI" })
+keymap.set("n", "<leader>om", "<Cmd>Mason<CR>", { desc = "opens Mason GUI" })

@@ -39,9 +39,8 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
-
--- spell checking
-opt.spelllang = 'en_us'
+-- spelling
+opt.spelllang = "en_us"
 opt.spell = true
 
 -- nice scrolling
