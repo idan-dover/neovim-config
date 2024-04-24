@@ -113,3 +113,9 @@ these do not need the leader key before being pressed
 - folke/which-key.nvim
 - williamboman/mason.nvim
 - neovim/nvim-lspconfig
+
+## Where I got the config from
+
+- terminal setup - https://www.josean.com/posts/terminal-setup
+- neovim setup - https://www.josean.com/posts/how-to-setup-neovim-2024
+- tmux setup - https://www.josean.com/posts/tmux-setup
