@@ -33,8 +33,6 @@ return {
 				"cssls", -- css
 				"tailwindcss", -- tailwind
 				"lua_ls", --lua
-				"graphql", -- grapghql
-				"prismals", -- prisma
 				"pyright", -- pythonh
 				"clangd", -- c, c++
 				"rust_analyzer", -- rust
@@ -50,7 +48,6 @@ return {
 				"isort", -- python formatter
 				"black", -- python formatter
 				"pylint", -- python linter
-				"eslint_d", -- js linter
 			},
 		})
 	end,

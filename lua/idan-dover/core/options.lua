@@ -41,7 +41,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- spelling
 opt.spelllang = "en_us"
-opt.spell = true
+opt.spell = false
 
 -- nice scrolling
 opt.scrolloff = 10
