@@ -38,7 +38,6 @@ return {
 				"pyright", -- pythonh
 				"clangd", -- c, c++
 				"rust_analyzer", -- rust
-				"jdtls", -- java
 				"dockerls", -- docker
 				"yamlls", -- yaml
 			},
